@@ -1,0 +1,27 @@
+﻿<h1> All motorcycles</h1>
+<h3>@Model.currCategory</h3>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Motorcycle moto in Model.allMotorcycles)
+        {
+           @Html.Partial("AllMotorcycles", moto)
+        }
+    }
+</div>
+
+@*///////////////////////////////////*@
+@*<h1> All motorcycles</h1>
+    <h3>@Model.currCategory</h3>
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (var moto in Model.allMotorcycles)
+            {
+                <div class="col-lg-4">
+                    <img class="img-thubnail" src="@moto.img" alt="moto.name" />
+                    <h2>Модель: @moto.name</h2>
+                    <p>Ціна: @moto.price.ToString("C3")</p>
+                    <p>Категорія: @moto.Category.categoryName</p>
+                    <p>@moto.shortDesc</p>
+                    <p><a class="btn ntn-warning" href="#">Детальніше</a></p>
+                </div>
+         }*@

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title</title>
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">MotoStore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Головна <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Motorcycles/list">Мотоцикли</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Motorcycles/list/Sport">Sport</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Motorcycles/list/Cross">Cross</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Motorcycles/list/Street">Street</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Motorcycles/list/Traveling">Traveling</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ShopCart/">Кошик</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container mt-5">
+            @RenderBody()
+        </div>
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>© 2020 Всі права захищені. · <a href="#">GOOD</a> · <a href="#">Terms</a></p>
+        </footer>
+        <script src="~/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////-->
+

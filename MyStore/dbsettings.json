@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    // "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=MyStore;Trusted_Connection=True;MultipleActiveResultSets=true"
+    "DefaultConnection": "Server=den1.mssql7.gear.host; Database=tempmoto; User Id=tempmoto; Password=Ra8S6d9-5S~P; MultipleActiveResultSets=true"
+  }
+}

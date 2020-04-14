@@ -1,0 +1,11 @@
+﻿@model  Motorcycle
+<div class="card col-lg-3 m-4">
+    <img src="@Model.img" class="card-img-top" alt="Model.name">
+    <div class="card-body">
+        <h5 class="card-title">Модель: @Model.name</h5>
+        <p class="card-text">@Model.shortDesc</p>
+        <p class="card-text">Ціна: @Model.price.ToString("C3")</p>
+        <p class="card-text">Категорія: @Model.Category.categoryName</p>
+        <p><a class="btn btn-warning" asp-controller="ShopCart" asp-action="addToCart" asp-route-id="@Model.id">Добавить в корзину</a></p>
+    </div>
+</div>
